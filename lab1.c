@@ -18,11 +18,11 @@ char* readString(char* file){
 char* mysteryExplode(const char* str){
 
     int len = strlen(str)-1;
-    char* newStr = calloc(((len*(len+1))/2));
+    char* newStr = calloc(((len*(len+1))/2),1);
     int count = 0;
     for(int j = 0; j < len; j++){
 
-        for(int k = 0; k < i+1; k++){
+        for(int k = 0; k < j+1; k++){
 
             strncat(newStr,&str[k],1);
         }
